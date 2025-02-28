@@ -1,0 +1,11 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'eu.gcr.io/gsuite-tools-311209/kxl-gmail-signature-update-receiver'
+      - '-f'
+      - 'Dockerfile_receiver'
+      - '.'
+images:
+  - 'eu.gcr.io/gsuite-tools-311209/kxl-gmail-signature-update-receiver'
